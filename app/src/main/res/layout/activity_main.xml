@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_latar"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Catatan Kegiatan 🌷"
+            android:textColor="@color/warna_teks"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hai! Yuk, atur kegiatanmu hari ini."
+            android:textColor="@color/warna_teks_sekunder"
+            android:textSize="14sp"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/warna_kartu"
+            android:padding="18dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Progres Kegiatan 🌱"
+                android:textColor="@color/warna_teks"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtProgress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0 dari 0 Kegiatan Selesai 🌱"
+                android:textColor="@color/warna_teks"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="+ Tambah Kegiatan"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/warna_sage"
+            android:layout_marginTop="20dp" />
+
+        <Button
+            android:id="@+id/btnSettings"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan ⚙"
+            android:textAllCaps="false"
+            android:textColor="@color/warna_teks"
+            android:backgroundTint="@color/warna_pink"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Daftar Kegiatan"
+            android:textColor="@color/warna_teks"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btnFilterSemua"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Semua"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:padding="4dp"
+                android:backgroundTint="@color/warna_sage"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/btnFilterBelum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Belum"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:padding="4dp"
+                android:backgroundTint="@color/warna_pink"
+                android:textColor="@color/warna_teks" />
+
+            <Button
+                android:id="@+id/btnFilterSelesai"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Selesai"
+                android:textAllCaps="false"
+                android:textSize="11sp"
+                android:padding="4dp"
+                android:backgroundTint="@color/warna_pink"
+                android:textColor="@color/warna_teks" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtEmpty"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🌷 Belum ada kegiatan. Yuk, tambahkan kegiatan pertamamu!"
+            android:textColor="@color/warna_teks_sekunder"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:padding="24dp"
+            android:layout_marginTop="12dp" />
+
+        <LinearLayout
+            android:id="@+id/layoutDaftarKegiatan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp" />
+
+    </LinearLayout>
+
+</ScrollView>

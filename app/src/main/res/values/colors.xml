@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Warna tema terang -->
+    <color name="warna_latar">#F8F5F1</color>
+    <color name="warna_kartu">#FFFFFF</color>
+    <color name="warna_teks">#536456</color>
+    <color name="warna_teks_sekunder">#8A9389</color>
+    <color name="warna_sage">#8FA88F</color>
+    <color name="warna_pink">#E9DDE0</color>
+    <color name="warna_tanggal">#A46F7A</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+</resources>

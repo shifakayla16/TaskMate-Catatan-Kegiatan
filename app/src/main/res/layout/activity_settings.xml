@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warna_latar">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pengaturan 🌷"
+            android:textColor="@color/warna_teks"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Pilih tampilan yang kamu sukai"
+            android:textColor="@color/warna_teks_sekunder"
+            android:textSize="14sp"
+            android:layout_marginTop="8dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="28dp">
+
+            <RadioButton
+                android:id="@+id/rbTemaTerang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tema Terang ☀️"
+                android:textColor="@color/warna_teks"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:buttonTint="@color/warna_sage" />
+
+            <RadioButton
+                android:id="@+id/rbTemaGelap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tema Gelap 🌙"
+                android:textColor="@color/warna_teks"
+                android:textSize="17sp"
+                android:padding="12dp"
+                android:buttonTint="@color/warna_sage" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnSimpanTema"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan Pengaturan"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/warna_sage"
+            android:layout_marginTop="24dp" />
+
+    </LinearLayout>
+
+</ScrollView>
